@@ -7,21 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="sidebar">
         <div class="banner">
-        <img src="odinTiny.png" alt="">
-        <h1>The Odin Project</h1>
+            <img src="OdinLittle.png" alt="">
+            <h1>The Odin Project</h1>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <p>This is not a real online service. This is a project implementation from the Odin Project, full-stack (JavaScript) course. This is an exercise from the forms module in course 1.</p>
-            <p>Submit the form if you'd like a personal website. Check out my other projects on my github.</p>
+        <div class="col top">
+            <p>This is not a real online service. This is a project implementation from the Odin Project, full-stack (JavaScript) course. This is an exercise from the Forms Module in course 1.</p>
+            <p>"Submit the form if you'd like to get in touch."</p>
         </div>
-        <div class="row"></div>
+        <div class="col middle">
+            <form id="myForm">
+                <h3>Let's do this</h3>
+                <div class="row">
+                    <label for="First-Name">FIRST NAME</label>
+                    <input type="text" name="First-Name">
+                    <label for="Last-Name">LAST NAME</label>
+                    <input type="text" name="Last-Name">
+                </div>
+                <div class="row">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="number" name="number">
+                </div>
+                <div class="row">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password">
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="confirm" name="confirm">
+                </div>
+            </form>
+        </div>
+        <div class="col bottom">
+            <button type="submit" form="myForm"><p>Create Account</p></button>
+        </div>
     </div>
 </body>
 </html>
