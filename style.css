@@ -77,9 +77,26 @@ p+p{
 form h3{
     margin-bottom: .5rem;
 }
+input{
+    width: 300px;
+}
 /* form{
     width: 80%;
 } */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+}
+.column+.column{
+    padding-left: 2rem;
+}
 .col{
     padding-left: 2em;
 }

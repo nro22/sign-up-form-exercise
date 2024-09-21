@@ -21,29 +21,41 @@
     </div>
     <div class="container">
         <div class="col top">
-            <p>This is not a real online service. This is a project implementation from the Odin Project, full-stack (JavaScript) course. This is an exercise from the Forms Module in course 1.</p>
+            <p>This is not a real online service. This is a project implementation from the Odin Project, full-stack (JavaScript) course. This exercise is from the Forms Module in course 1.</p>
             <p>"Submit the form if you'd like to get in touch."</p>
         </div>
         <div class="col middle">
             <form id="myForm">
                 <h3>Let's do this</h3>
                 <div class="row">
-                    <label for="First-Name">FIRST NAME</label>
-                    <input type="text" name="First-Name">
-                    <label for="Last-Name">LAST NAME</label>
-                    <input type="text" name="Last-Name">
+                    <div class="column">
+                        <label for="First-Name">FIRST NAME</label>
+                        <input type="text" name="First-Name">
+                    </div>
+                    <div class="column">
+                        <label for="Last-Name">LAST NAME</label>
+                        <input type="text" name="Last-Name">
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email">
-                    <label for="number">PHONE NUMBER</label>
-                    <input type="number" name="number">
+                    <div class="column">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="column">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="text" name="number">
+                    </div>
                 </div>
                 <div class="row">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password">
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="confirm" name="confirm">
+                    <div class="column">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="column">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="confirm" name="confirm">
+                    </div>
                 </div>
             </form>
         </div>
